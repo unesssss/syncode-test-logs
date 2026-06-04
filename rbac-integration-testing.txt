@@ -1,0 +1,652 @@
+﻿============================================================
+RBAC integration tests (Mocha / Extension Host) (10 runs)
+============================================================
+
+
+ Run  1: PASS  7293 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  2: PASS  6878 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+Run  3: PASS  4799 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  4: PASS  5060 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  5: PASS  4994 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  6: PASS  4844 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  7: PASS  5083 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  8: PASS  5915 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  9: PASS  5141 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run 10: PASS  5363 ms  |  tests 28/28 passed
+           • [passed] RBAC Extension Host — role capabilities Viewer: canRead true; canEdit and canManage false
+           • [passed] RBAC Extension Host — role capabilities Editor: canRead and canEdit true; canManage false
+           • [passed] RBAC Extension Host — role capabilities Owner: canRead, canEdit, and canManage true
+           • [passed] RBAC Extension Host — TextEditor edit gating Viewer: insert is not applied; document unchanged
+           • [passed] RBAC Extension Host — TextEditor edit gating Editor: insert applied
+           • [passed] RBAC Extension Host — TextEditor edit gating Owner: insert applied
+           • [passed] RBAC Extension Host — validateOperation matrix Viewer: write ops denied; read ops allowed; manage ops denied       
+           • [passed] RBAC Extension Host — validateOperation matrix Editor: write ops allowed; manage ops denied
+           • [passed] RBAC Extension Host — validateOperation matrix Owner: write and manage ops allowed
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / w => false
+           • [passed] RBAC Extension Host — hasPermission matrix viewer / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix editor / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix editor / m => false
+           • [passed] RBAC Extension Host — hasPermission matrix owner / r => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / w => true
+           • [passed] RBAC Extension Host — hasPermission matrix owner / m => true
+           • [passed] RBAC Extension Host — manage gate (simulated command) Viewer and Editor denied; Owner allowed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Viewer session cannot mutate Yjs text; logs RBAC Enforcement + validation failed
+           • [passed] RBAC Extension Host — enforcement (negative / shared CRDT) Editor cannot run MANAGE (permission map); validation log names role
+           • [passed] RBAC Extension Host — enforcement (negative / FileDocument) Viewer bound to FileDocument cannot write; Yjs content unchanged
+           • [passed] RBAC Extension Host — Mid-Session Demotion TextEditor stops accepting inserts after live Editor → Viewer demotion on same User
+           • [passed] RBAC Extension Host — Mid-Session Demotion end-of-document “keystrokes” stop the moment role flips; multiple post-demotion edits all no-op
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) after WRITE is revoked, collaborator cannot merge further local writes into shared text
+           • [passed] RBAC Extension Host — Offline-to-Online (shared CRDT) reconnection: peer replica stays legal; post-revoke local writes rejected on both peers after Yjs sync
+           • [passed] RBAC Extension Host — Rapid Role Swapping permission surface (description + gates) matches final role after many toggles
+           • [passed] RBAC Extension Host — Rapid Role Swapping sidebar webview status messages reflect final role (role badge / toolbar contract)
+
+
+------------------------------------------------------------
+  Average duration:     5537.0 ms
+  Run pass rate:        10/10 (whole run succeeded)
+  Avg tests per run:    28.0 passed / 28.0 total

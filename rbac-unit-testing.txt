@@ -1,0 +1,477 @@
+﻿============================================================
+RBAC unit tests (Jest) (10 runs)
+============================================================
+
+
+Run  1: PASS  3092 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+  
+Run  2: PASS  3183 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+  
+
+
+Run  3: PASS  2970 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+  
+
+
+Run  4: PASS  3148 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+  
+
+
+Run  5: PASS  2974 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  6: PASS  3055 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+
+
+
+
+
+
+
+
+Run  7: PASS  3289 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+
+
+
+
+
+
+
+
+
+
+Run  8: PASS  3239 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Run  9: PASS  3051 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+
+
+
+
+
+
+
+
+Run 10: PASS  3013 ms  |  tests 38/38 passed
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — canEdit / validateOperation track current role updates immediately when the same User object is demoted Editor → Viewer
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — validateOperation uses current restrictions rejects write operations once the user is represented as Viewer (queued-op narrative)
+           • [passed] RBAC session scenarios (Jest) Mid-Session Demotion — CRDT permission map (shared state) blocks the next local write after MANAGE strips WRITE from the collaborator
+           • [passed] RBAC session scenarios (Jest) Offline-to-Online — CRDT integrity after restriction does not apply further inserts from a user whose WRITE was revoked (simulated reconnect)
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state keeps canEdit / canManage aligned with the role field after many toggles
+           • [passed] RBAC session scenarios (Jest) Rapid Role Swapping — stable permission state CRDT permission map reflects final role after rapid MANAGE updates
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has w => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix viewer has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix editor has m => false
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has r => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has w => true
+           • [passed] RBACManager hasPermission / canRead / canEdit / canManage matrix owner has m => true
+           • [passed] RBACManager validateOperation viewer cannot insert (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot delete (requires WRITE)
+           • [passed] RBACManager validateOperation viewer cannot edit (requires WRITE)
+           • [passed] RBACManager validateOperation editor can insert
+           • [passed] RBACManager validateOperation editor can delete
+           • [passed] RBACManager validateOperation editor can edit
+           • [passed] RBACManager validateOperation viewer cannot permission (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot addUser (requires MANAGE)
+           • [passed] RBACManager validateOperation viewer cannot removeUser (requires MANAGE)
+           • [passed] RBACManager validateOperation owner can permission
+           • [passed] RBACManager validateOperation owner can addUser
+           • [passed] RBACManager validateOperation owner can removeUser
+           • [passed] RBACManager validateOperation viewer can read (READ)
+           • [passed] RBACManager validateOperation viewer can view (READ)
+           • [passed] RBACManager validateOperation viewer can unknown (READ)
+           • [passed] RBACManager validateOperation editor cannot manage users
+           • [passed] RBACManager getUserPermissions / getPermissionDescription returns role defaults when no custom permissions
+           • [passed] RBACManager getUserPermissions / getPermissionDescription uses custom permissions when provided
+           • [passed] RBACManager getUserPermissions / getPermissionDescription describes permissions for owner
+           • [passed] RBACManager hasAllPermissions / runSecurityTests hasAllPermissions requires every permission
+           • [passed] RBACManager hasAllPermissions / runSecurityTests runSecurityTests passes for valid owner and viewer
+           • [passed] RBACManager audit logging on denied checks logs PERMISSION_DENIED when access denied and auditContext is set       
+           • [passed] RBACManager audit logging on denied checks does not log when auditContext is omitted
+
+
+------------------------------------------------------------
+  Average duration:     3101.4 ms
+  Run pass rate:        10/10 (whole run succeeded)
+  Avg tests per run:    38.0 passed / 38.0 total
