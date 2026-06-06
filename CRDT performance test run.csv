@@ -1,0 +1,1030 @@
+﻿CRDT performance test run 1,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,915 ms,689 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),70 ms,78 ms
+[B1.2] Insert string of length N (time)  ,3 ms,2 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),5.3 kB,24.6 kB
+[B1.2] Insert string of length N (parseTime),87 ms,74 ms
+[B1.3] Prepend N characters (time),680 ms,658 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1 MB,1.4 MB
+[B1.3] Prepend N characters (parseTime),279 ms,203 ms
+[B1.4] Insert N characters at random positions (time),708 ms,673 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,554 bytes","29,574 bytes"
+[B1.4] Insert N characters at random positions (memUsed),824 kB,1.2 MB
+[B1.4] Insert N characters at random positions (parseTime),207 ms,206 ms
+[B1.5] Insert N words at random positions (time),847 ms,753 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,924 bytes","87,215 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.4 MB,2.8 MB
+[B1.5] Insert N words at random positions (parseTime),262 ms,181 ms
+"[B1.6] Insert string, then delete it (time)",7 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,12.5 kB
+"[B1.6] Insert string, then delete it (parseTime)",90 ms,145 ms
+[B1.7] Insert or delete strings at random positions (time),843 ms,807 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"28,377 bytes","29,001 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.5 MB,1.5 MB
+[B1.7] Insert or delete strings at random positions (parseTime),245 ms,262 ms
+[B1.8] Append N numbers (time),780 ms,768 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,634 bytes","35,679 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),88 ms,90 ms
+[B1.9] Insert Array of N numbers (time),24 ms,20 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,657 bytes","35,654 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,657 bytes","35,654 bytes"
+[B1.9] Insert Array of N numbers (memUsed),66.3 kB,37.6 kB
+[B1.9] Insert Array of N numbers (parseTime),70 ms,81 ms
+[B1.10] Prepend N numbers (time),660 ms,759 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,665 bytes","35,703 bytes"
+[B1.10] Prepend N numbers (memUsed),2.3 MB,2.4 MB
+[B1.10] Prepend N numbers (parseTime),227 ms,290 ms
+[B1.11] Insert N numbers at random positions (time),754 ms,744 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,137 bytes","59,256 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.2 MB
+[B1.11] Insert N numbers at random positions (parseTime),184 ms,148 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),3 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,151 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),0 B,19.5 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),141 ms,162 ms
+[B2.2] Concurrently insert N characters at random positions (time),202 ms,202 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,444 bytes","33,636 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,852 bytes","67,244 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.9 MB,2.9 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),199 ms,285 ms
+[B2.3] Concurrently insert N words at random positions (time),274 ms,274 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"88,994 bytes","89,554 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"178,130 bytes","179,291 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),219 ms,256 ms
+[B2.4] Concurrently insert and delete (time),533 ms,602 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"139,517 bytes","138,669 bytes"
+[B2.4] Concurrently insert and delete (docSize),"279,172 bytes","277,494 bytes"
+[B2.4] Concurrently insert and delete (memUsed),9.3 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),386 ms,374 ms
+[B3.1] 250 clients concurrently set number in map (time),18 ms,21 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,929 bytes","7,929 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,247 bytes","5,249 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),88.4 kB,32.8 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),84 ms,144 ms
+[B3.2] 250 clients concurrently set object in map (time),20 ms,25 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,630 bytes","13,634 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,267 bytes","5,272 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),47.1 kB,73.7 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),218 ms,150 ms
+[B3.3] 250 clients concurrently set string in map (time),16 ms,15 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,590 bytes","993,592 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,864 bytes","9,863 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),100.8 kB,253.6 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),142 ms,167 ms
+[B3.4] 250 clients concurrently insert text in array (time),26 ms,19 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,380 bytes","8,386 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,155 bytes","4,161 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),0 B,6.6 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),151 ms,80 ms
+[B4] Apply real-world editing dataset (time),"13,839 ms","14,941 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,488,444 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,931 bytes"
+[B4] Apply real-world editing dataset (memUsed),115 MB,133 MB
+[B4] Apply real-world editing dataset (parseTime),3.3 ms,2.9 ms
+CRDT performance test run 2,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,684 ms,700 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),90 ms,98 ms
+[B1.2] Insert string of length N (time)  ,2 ms,6 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),2.3 kB,28.5 kB
+[B1.2] Insert string of length N (parseTime),83 ms,87 ms
+[B1.3] Prepend N characters (time),640 ms,660 ms
+[B1.3] Prepend N characters (avgUpdateSize),26 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,040 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.2 MB,1.1 MB
+[B1.3] Prepend N characters (parseTime),295 ms,286 ms
+[B1.4] Insert N characters at random positions (time),712 ms,639 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,555 bytes","29,598 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.2 MB,1.3 MB
+[B1.4] Insert N characters at random positions (parseTime),235 ms,253 ms
+[B1.5] Insert N words at random positions (time),800 ms,740 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,030 bytes","86,905 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.9 MB
+[B1.5] Insert N words at random positions (parseTime),181 ms,202 ms
+"[B1.6] Insert string, then delete it (time)",4 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,47.1 kB
+"[B1.6] Insert string, then delete it (parseTime)",191 ms,157 ms
+[B1.7] Insert or delete strings at random positions (time),824 ms,944 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),30 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"32,698 bytes","30,205 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.5 MB,1.4 MB
+[B1.7] Insert or delete strings at random positions (parseTime),350 ms,270 ms
+[B1.8] Append N numbers (time),767 ms,802 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,653 bytes","35,664 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),107 ms,113 ms
+[B1.9] Insert Array of N numbers (time),13 ms,24 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,650 bytes","35,669 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,650 bytes","35,669 bytes"
+[B1.9] Insert Array of N numbers (memUsed),70.1 kB,0 B
+[B1.9] Insert Array of N numbers (parseTime),74 ms,70 ms
+[B1.10] Prepend N numbers (time),646 ms,669 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,676 bytes","35,654 bytes"
+[B1.10] Prepend N numbers (memUsed),2.4 MB,2.4 MB
+[B1.10] Prepend N numbers (parseTime),256 ms,219 ms
+[B1.11] Insert N numbers at random positions (time),710 ms,690 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,155 bytes","59,147 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.2 MB,2.1 MB
+[B1.11] Insert N numbers at random positions (parseTime),174 ms,193 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),4 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),32.4 kB,53.4 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),144 ms,142 ms
+[B2.2] Concurrently insert N characters at random positions (time),163 ms,179 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,255 bytes","33,690 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,485 bytes","67,350 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),231 ms,211 ms
+[B2.3] Concurrently insert N words at random positions (time),239 ms,240 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,236 bytes","89,894 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"178,651 bytes","179,969 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.4 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),275 ms,255 ms
+[B2.4] Concurrently insert and delete (time),596 ms,578 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"139,627 bytes","138,384 bytes"
+[B2.4] Concurrently insert and delete (docSize),"279,413 bytes","276,941 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),350 ms,356 ms
+[B3.1] 250 clients concurrently set number in map (time),12 ms,23 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,932 bytes","7,933 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,253 bytes","5,257 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),99.3 kB,23 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),163 ms,181 ms
+[B3.2] 250 clients concurrently set object in map (time),26 ms,24 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,636 bytes","13,634 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,275 bytes","5,275 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),220.4 kB,263.1 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),171 ms,184 ms
+[B3.3] 250 clients concurrently set string in map (time),25 ms,10 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,592 bytes","993,592 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,862 bytes","8,327 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),61.2 kB,243.4 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),79 ms,155 ms
+[B3.4] 250 clients concurrently insert text in array (time),18 ms,22 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,380 bytes","8,386 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,155 bytes","4,161 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),242.5 kB,171.6 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),163 ms,176 ms
+[B4] Apply real-world editing dataset (time),"14,949 ms","15,425 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,306,126 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,927 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),110 MB,142 MB
+[B4] Apply real-world editing dataset (parseTime),3 ms,3.3 ms
+CRDT performance test run 3,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,827 ms,805 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),86 ms,107 ms
+[B1.2] Insert string of length N (time)  ,2 ms,2 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),20.5 kB,23.9 kB
+[B1.2] Insert string of length N (parseTime),79 ms,85 ms
+[B1.3] Prepend N characters (time),773 ms,631 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.2 MB,1.2 MB
+[B1.3] Prepend N characters (parseTime),302 ms,248 ms
+[B1.4] Insert N characters at random positions (time),797 ms,699 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,577 bytes","29,537 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.1 MB
+[B1.4] Insert N characters at random positions (parseTime),234 ms,213 ms
+[B1.5] Insert N words at random positions (time),732 ms,771 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,264 bytes","87,305 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.9 MB
+[B1.5] Insert N words at random positions (parseTime),201 ms,223 ms
+"[B1.6] Insert string, then delete it (time)",3 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,052 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",37 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,0 B
+"[B1.6] Insert string, then delete it (parseTime)",143 ms,149 ms
+[B1.7] Insert or delete strings at random positions (time),858 ms,780 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"33,084 bytes","29,906 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.8 MB,1.5 MB
+[B1.7] Insert or delete strings at random positions (parseTime),317 ms,270 ms
+[B1.8] Append N numbers (time),881 ms,753 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,676 bytes","35,629 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),93 ms,101 ms
+[B1.9] Insert Array of N numbers (time),22 ms,24 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,661 bytes","35,630 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,661 bytes","35,630 bytes"
+[B1.9] Insert Array of N numbers (memUsed),35.2 kB,0 B
+[B1.9] Insert Array of N numbers (parseTime),99 ms,83 ms
+[B1.10] Prepend N numbers (time),667 ms,671 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,651 bytes","35,653 bytes"
+[B1.10] Prepend N numbers (memUsed),2.4 MB,2.3 MB
+[B1.10] Prepend N numbers (parseTime),263 ms,203 ms
+[B1.11] Insert N numbers at random positions (time),818 ms,701 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,257 bytes","59,208 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.2 MB,2.2 MB
+[B1.11] Insert N numbers at random positions (parseTime),258 ms,142 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),3 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,151 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),9.3 kB,31.2 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),142 ms,132 ms
+[B2.2] Concurrently insert N characters at random positions (time),229 ms,181 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,609 bytes","33,550 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"67,197 bytes","67,078 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.9 MB,2.9 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),302 ms,318 ms
+[B2.3] Concurrently insert N words at random positions (time),352 ms,256 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,799 bytes","89,826 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"179,769 bytes","179,812 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),449 ms,270 ms
+[B2.4] Concurrently insert and delete (time),647 ms,540 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"137,958 bytes","138,798 bytes"
+[B2.4] Concurrently insert and delete (docSize),"276,070 bytes","277,796 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),391 ms,341 ms
+[B3.1] 250 clients concurrently set number in map (time),18 ms,14 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,930 bytes","7,929 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,252 bytes","5,250 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),72 kB,37.5 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),190 ms,209 ms
+[B3.2] 250 clients concurrently set object in map (time),32 ms,26 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,624 bytes","13,631 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,250 bytes","5,270 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),0 B,184.5 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),165 ms,149 ms
+[B3.3] 250 clients concurrently set string in map (time),18 ms,18 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,594 bytes","993,592 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,868 bytes","9,869 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),204.5 kB,6.9 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),159 ms,153 ms
+[B3.4] 250 clients concurrently insert text in array (time),29 ms,19 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,383 bytes","8,382 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,158 bytes","4,157 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),161.6 kB,0 B
+[B3.4] 250 clients concurrently insert text in array (parseTime),174 ms,168 ms
+[B4] Apply real-world editing dataset (time),"16,263 ms","14,246 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),107 MB,109 MB
+[B4] Apply real-world editing dataset (parseTime),3.3 ms,3.1 ms
+CRDT performance test run 4,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,691 ms,674 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),80 ms,95 ms
+[B1.2] Insert string of length N (time)  ,2 ms,3 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),23.7 kB,0 B
+[B1.2] Insert string of length N (parseTime),79 ms,72 ms
+[B1.3] Prepend N characters (time),661 ms,691 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.3 MB,1.1 MB
+[B1.3] Prepend N characters (parseTime),283 ms,255 ms
+[B1.4] Insert N characters at random positions (time),730 ms,725 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,562 bytes","29,594 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.4 MB,1 MB
+[B1.4] Insert N characters at random positions (parseTime),205 ms,215 ms
+[B1.5] Insert N words at random positions (time),734 ms,836 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,666 bytes","87,155 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.8 MB
+[B1.5] Insert N words at random positions (parseTime),181 ms,218 ms
+"[B1.6] Insert string, then delete it (time)",3 ms,6 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",12.5 kB,77.5 kB
+"[B1.6] Insert string, then delete it (parseTime)",148 ms,154 ms
+[B1.7] Insert or delete strings at random positions (time),801 ms,819 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"32,325 bytes","34,067 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.8 MB,1.7 MB
+[B1.7] Insert or delete strings at random positions (parseTime),231 ms,286 ms
+[B1.8] Append N numbers (time),776 ms,721 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,677 bytes","35,653 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),105 ms,82 ms
+[B1.9] Insert Array of N numbers (time),31 ms,24 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,656 bytes","35,646 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,656 bytes","35,646 bytes"
+[B1.9] Insert Array of N numbers (memUsed),45.1 kB,45.8 kB
+[B1.9] Insert Array of N numbers (parseTime),84 ms,89 ms
+[B1.10] Prepend N numbers (time),630 ms,668 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,31 bytes
+[B1.10] Prepend N numbers (docSize),"35,649 bytes","35,678 bytes"
+[B1.10] Prepend N numbers (memUsed),2.2 MB,2.3 MB
+[B1.10] Prepend N numbers (parseTime),196 ms,190 ms
+[B1.11] Insert N numbers at random positions (time),726 ms,728 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,207 bytes","59,167 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.1 MB
+[B1.11] Insert N numbers at random positions (parseTime),208 ms,262 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),3 ms,2 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),24.1 kB,0 B
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),159 ms,94 ms
+[B2.2] Concurrently insert N characters at random positions (time),149 ms,172 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,475 bytes","33,573 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,928 bytes","67,129 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),223 ms,187 ms
+[B2.3] Concurrently insert N words at random positions (time),286 ms,289 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,119 bytes","89,374 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"178,382 bytes","178,912 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),275 ms,274 ms
+[B2.4] Concurrently insert and delete (time),492 ms,532 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"140,241 bytes","140,052 bytes"
+[B2.4] Concurrently insert and delete (docSize),"280,638 bytes","280,269 bytes"
+[B2.4] Concurrently insert and delete (memUsed),9 MB,9 MB
+[B2.4] Concurrently insert and delete (parseTime),327 ms,340 ms
+[B3.1] 250 clients concurrently set number in map (time),12 ms,19 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,928 bytes","7,933 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,244 bytes","5,259 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),0 B,0 B
+[B3.1] 250 clients concurrently set number in map (parseTime),243 ms,230 ms
+[B3.2] 250 clients concurrently set object in map (time),32 ms,42 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,630 bytes","13,632 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,266 bytes","5,270 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),65.7 kB,70.7 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),163 ms,156 ms
+[B3.3] 250 clients concurrently set string in map (time),21 ms,21 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,589 bytes","993,592 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,864 bytes","8,326 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),184.2 kB,0 B
+[B3.3] 250 clients concurrently set string in map (parseTime),151 ms,168 ms
+[B3.4] 250 clients concurrently insert text in array (time),13 ms,23 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,381 bytes","8,375 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,156 bytes","4,150 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),0 B,175.3 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),149 ms,92 ms
+[B4] Apply real-world editing dataset (time),"14,378 ms","16,702 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),112 MB,128 MB
+[B4] Apply real-world editing dataset (parseTime),3.2 ms,3 ms
+CRDT performance test run 5,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,689 ms,699 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),74 ms,92 ms
+[B1.2] Insert string of length N (time) ,2 ms,3 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),10.1 kB,17.7 kB
+[B1.2] Insert string of length N (parseTime),84 ms,84 ms
+[B1.3] Prepend N characters (time),623 ms,658 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.3 MB,1.3 MB
+[B1.3] Prepend N characters (parseTime),205 ms,278 ms
+[B1.4] Insert N characters at random positions (time),695 ms,683 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,559 bytes","29,528 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.1 MB
+[B1.4] Insert N characters at random positions (parseTime),232 ms,241 ms
+[B1.5] Insert N words at random positions (time),813 ms,838 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,275 bytes","87,732 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.8 MB
+[B1.5] Insert N words at random positions (parseTime),276 ms,213 ms
+"[B1.6] Insert string, then delete it (time)",4 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,0 B
+"[B1.6] Insert string, then delete it (parseTime)",101 ms,150 ms
+[B1.7] Insert or delete strings at random positions (time),881 ms,795 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),30 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"33,348 bytes","32,653 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.7 MB,1.6 MB
+[B1.7] Insert or delete strings at random positions (parseTime),262 ms,316 ms
+[B1.8] Append N numbers (time),724 ms,753 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,641 bytes","35,625 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),90 ms,93 ms
+[B1.9] Insert Array of N numbers (time),17 ms,26 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,657 bytes","35,641 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,657 bytes","35,641 bytes"
+[B1.9] Insert Array of N numbers (memUsed),16.4 kB,0 B
+[B1.9] Insert Array of N numbers (parseTime),87 ms,83 ms
+[B1.10] Prepend N numbers (time),672 ms,739 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,680 bytes","35,646 bytes"
+[B1.10] Prepend N numbers (memUsed),2.3 MB,2.2 MB
+[B1.10] Prepend N numbers (parseTime),263 ms,241 ms
+[B1.11] Insert N numbers at random positions (time),712 ms,751 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,186 bytes","59,162 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.2 MB,2.2 MB
+[B1.11] Insert N numbers at random positions (parseTime),181 ms,167 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),4 ms,3 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),69.4 kB,92.8 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),150 ms,145 ms
+[B2.2] Concurrently insert N characters at random positions (time),135 ms,174 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,466 bytes","33,108 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,908 bytes","66,195 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),242 ms,225 ms
+[B2.3] Concurrently insert N words at random positions (time),262 ms,252 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,545 bytes","89,525 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"179,254 bytes","179,187 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.4 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),261 ms,257 ms
+[B2.4] Concurrently insert and delete (time),582 ms,532 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"138,390 bytes","139,661 bytes"
+[B2.4] Concurrently insert and delete (docSize),"276,941 bytes","279,511 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,9.4 MB
+[B2.4] Concurrently insert and delete (parseTime),331 ms,325 ms
+[B3.1] 250 clients concurrently set number in map (time),17 ms,11 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,928 bytes","7,931 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,247 bytes","5,248 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),28.5 kB,109.3 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),253 ms,154 ms
+[B3.2] 250 clients concurrently set object in map (time),32 ms,19 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,630 bytes","13,633 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,260 bytes","5,268 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),0 B,68.6 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),162 ms,202 ms
+[B3.3] 250 clients concurrently set string in map (time),18 ms,20 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,598 bytes","993,596 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"8,340 bytes","8,329 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),270.8 kB,242.1 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),176 ms,143 ms
+[B3.4] 250 clients concurrently insert text in array (time),34 ms,22 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,384 bytes","8,385 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,159 bytes","4,160 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),142.9 kB,3.1 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),145 ms,141 ms
+[B4] Apply real-world editing dataset (time),"15,497 ms","14,524 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),112 MB,176 MB
+[B4] Apply real-world editing dataset (parseTime),3.2 ms,3 ms
+CRDT performance test run 6,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,664 ms,662 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),117 ms,89 ms
+[B1.2] Insert string of length N (time)  ,2 ms,2 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),16 kB,28.2 kB
+[B1.2] Insert string of length N (parseTime),80 ms,105 ms
+[B1.3] Prepend N characters (time),652 ms,677 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.3 MB,1.4 MB
+[B1.3] Prepend N characters (parseTime),241 ms,211 ms
+[B1.4] Insert N characters at random positions (time),634 ms,723 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,565 bytes","29,539 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.3 MB
+[B1.4] Insert N characters at random positions (parseTime),219 ms,238 ms
+[B1.5] Insert N words at random positions (time),745 ms,785 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"86,916 bytes","87,436 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.7 MB
+[B1.5] Insert N words at random positions (parseTime),316 ms,275 ms
+"[B1.6] Insert string, then delete it (time)",2 ms,4 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",11.6 kB,0 B
+"[B1.6] Insert string, then delete it (parseTime)",143 ms,123 ms
+[B1.7] Insert or delete strings at random positions (time),888 ms,791 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"31,850 bytes","31,003 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.6 MB,1.7 MB
+[B1.7] Insert or delete strings at random positions (parseTime),228 ms,227 ms
+[B1.8] Append N numbers (time),723 ms,768 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,658 bytes","35,648 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),85 ms,98 ms
+[B1.9] Insert Array of N numbers (time),31 ms,22 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,663 bytes","35,655 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,663 bytes","35,655 bytes"
+[B1.9] Insert Array of N numbers (memUsed),44.6 kB,35.8 kB
+[B1.9] Insert Array of N numbers (parseTime),87 ms,87 ms
+[B1.10] Prepend N numbers (time),654 ms,642 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,680 bytes","35,678 bytes"
+[B1.10] Prepend N numbers (memUsed),2.4 MB,2.3 MB
+[B1.10] Prepend N numbers (parseTime),203 ms,255 ms
+[B1.11] Insert N numbers at random positions (time),686 ms,683 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,187 bytes","59,153 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.2 MB
+[B1.11] Insert N numbers at random positions (parseTime),157 ms,141 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),4 ms,8 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),51.5 kB,38.8 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),148 ms,133 ms
+[B2.2] Concurrently insert N characters at random positions (time),166 ms,190 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,167 bytes","33,456 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,298 bytes","66,884 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),185 ms,184 ms
+[B2.3] Concurrently insert N words at random positions (time),233 ms,263 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,549 bytes","89,395 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"179,277 bytes","178,950 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.4 MB,6.4 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),295 ms,318 ms
+[B2.4] Concurrently insert and delete (time),511 ms,535 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"138,983 bytes","139,320 bytes"
+[B2.4] Concurrently insert and delete (docSize),"278,164 bytes","278,754 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.8 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),365 ms,365 ms
+[B3.1] 250 clients concurrently set number in map (time),16 ms,27 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,929 bytes","7,929 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,244 bytes","5,250 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),95.6 kB,0 B
+[B3.1] 250 clients concurrently set number in map (parseTime),163 ms,154 ms
+[B3.2] 250 clients concurrently set object in map (time),22 ms,27 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,639 bytes","13,632 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,280 bytes","5,268 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),182 kB,138.7 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),172 ms,161 ms
+[B3.3] 250 clients concurrently set string in map (time),18 ms,22 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,591 bytes","993,591 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,867 bytes","9,867 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),68.5 kB,159.5 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),154 ms,143 ms
+[B3.4] 250 clients concurrently insert text in array (time),28 ms,22 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,387 bytes","8,384 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,162 bytes","4,159 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),217.1 kB,52.6 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),150 ms,272 ms
+[B4] Apply real-world editing dataset (time),"15,256 ms","14,876 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),102 MB,108 MB
+[B4] Apply real-world editing dataset (parseTime),3 ms,3.3 ms
+CRDT performance test run 7,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,732 ms,660 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),84 ms,78 ms
+[B1.2] Insert string of length N (time)  ,2 ms,2 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),25.5 kB,18.8 kB
+[B1.2] Insert string of length N (parseTime),84 ms,87 ms
+[B1.3] Prepend N characters (time),745 ms,670 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.3 MB,1.3 MB
+[B1.3] Prepend N characters (parseTime),324 ms,215 ms
+[B1.4] Insert N characters at random positions (time),811 ms,689 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,569 bytes","29,551 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.3 MB
+[B1.4] Insert N characters at random positions (parseTime),255 ms,211 ms
+[B1.5] Insert N words at random positions (time),977 ms,761 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,592 bytes","87,722 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.8 MB
+[B1.5] Insert N words at random positions (parseTime),196 ms,224 ms
+"[B1.6] Insert string, then delete it (time)",3 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,0 B
+"[B1.6] Insert string, then delete it (parseTime)",163 ms,156 ms
+[B1.7] Insert or delete strings at random positions (time),958 ms,794 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"32,622 bytes","31,008 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.7 MB,1.8 MB
+[B1.7] Insert or delete strings at random positions (parseTime),259 ms,230 ms
+[B1.8] Append N numbers (time),930 ms,768 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,652 bytes","35,656 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),95 ms,96 ms
+[B1.9] Insert Array of N numbers (time),25 ms,26 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,643 bytes","35,660 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,643 bytes","35,660 bytes"
+[B1.9] Insert Array of N numbers (memUsed),0 B,0 B
+[B1.9] Insert Array of N numbers (parseTime),93 ms,90 ms
+[B1.10] Prepend N numbers (time),764 ms,685 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,684 bytes","35,649 bytes"
+[B1.10] Prepend N numbers (memUsed),2.3 MB,2.5 MB
+[B1.10] Prepend N numbers (parseTime),234 ms,191 ms
+[B1.11] Insert N numbers at random positions (time),919 ms,645 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,33 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,230 bytes","59,148 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.4 MB
+[B1.11] Insert N numbers at random positions (parseTime),194 ms,275 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),3 ms,3 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,151 bytes","12,155 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),8.2 kB,0 B
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),172 ms,86 ms
+[B2.2] Concurrently insert N characters at random positions (time),248 ms,170 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,513 bytes","33,377 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,996 bytes","66,732 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.9 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),223 ms,199 ms
+[B2.3] Concurrently insert N words at random positions (time),310 ms,270 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,328 bytes","89,200 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"178,813 bytes","178,546 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),369 ms,269 ms
+[B2.4] Concurrently insert and delete (time),492 ms,539 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"140,198 bytes","139,319 bytes"
+[B2.4] Concurrently insert and delete (docSize),"280,496 bytes","278,803 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),359 ms,356 ms
+[B3.1] 250 clients concurrently set number in map (time),13 ms,22 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,930 bytes","7,927 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,248 bytes","5,244 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),218.4 kB,98.1 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),156 ms,227 ms
+[B3.2] 250 clients concurrently set object in map (time),24 ms,23 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,632 bytes","13,632 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,271 bytes","5,270 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),0 B,144.5 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),117 ms,235 ms
+[B3.3] 250 clients concurrently set string in map (time),17 ms,15 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,591 bytes","993,597 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,862 bytes","9,872 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),235.4 kB,197.4 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),197 ms,161 ms
+[B3.4] 250 clients concurrently insert text in array (time),16 ms,34 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,380 bytes","8,381 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,155 bytes","4,156 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),0 B,0 B
+[B3.4] 250 clients concurrently insert text in array (parseTime),123 ms,156 ms
+[B4] Apply real-world editing dataset (time),"16,363 ms","14,663 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),104 MB,130 MB
+[B4] Apply real-world editing dataset (parseTime),3.2 ms,3.2 ms
+CRDT performance test run 8,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,726 ms,666 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),74 ms,70 ms
+[B1.2] Insert string of length N (time)  ,2 ms,3 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),4.1 kB,11.2 kB
+[B1.2] Insert string of length N (parseTime),86 ms,89 ms
+[B1.3] Prepend N characters (time),630 ms,676 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,26 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,043 bytes"
+[B1.3] Prepend N characters (memUsed),1.3 MB,1.2 MB
+[B1.3] Prepend N characters (parseTime),190 ms,208 ms
+[B1.4] Insert N characters at random positions (time),641 ms,674 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,554 bytes","29,569 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.1 MB
+[B1.4] Insert N characters at random positions (parseTime),221 ms,207 ms
+[B1.5] Insert N words at random positions (time),797 ms,781 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),35 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,261 bytes","87,926 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.9 MB
+[B1.5] Insert N words at random positions (parseTime),211 ms,259 ms
+"[B1.6] Insert string, then delete it (time)",3 ms,3 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,0 B
+"[B1.6] Insert string, then delete it (parseTime)",139 ms,93 ms
+[B1.7] Insert or delete strings at random positions (time),817 ms,871 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"32,763 bytes","33,322 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.7 MB,1.4 MB
+[B1.7] Insert or delete strings at random positions (parseTime),298 ms,391 ms
+[B1.8] Append N numbers (time),775 ms,778 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,650 bytes","35,674 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),92 ms,87 ms
+[B1.9] Insert Array of N numbers (time),21 ms,21 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,688 bytes","35,648 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,688 bytes","35,648 bytes"
+[B1.9] Insert Array of N numbers (memUsed),34.9 kB,35.8 kB
+[B1.9] Insert Array of N numbers (parseTime),84 ms,86 ms
+[B1.10] Prepend N numbers (time),661 ms,635 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,674 bytes","35,695 bytes"
+[B1.10] Prepend N numbers (memUsed),2.4 MB,2.3 MB
+[B1.10] Prepend N numbers (parseTime),229 ms,217 ms
+[B1.11] Insert N numbers at random positions (time),765 ms,697 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,179 bytes","59,206 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.4 MB,2.1 MB
+[B1.11] Insert N numbers at random positions (parseTime),212 ms,172 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),5 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,155 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),0 B,85.6 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),139 ms,181 ms
+[B2.2] Concurrently insert N characters at random positions (time),175 ms,174 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,406 bytes","33,189 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,796 bytes","66,359 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),208 ms,311 ms
+[B2.3] Concurrently insert N words at random positions (time),252 ms,248 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,645 bytes","89,345 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"179,439 bytes","178,837 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),271 ms,266 ms
+[B2.4] Concurrently insert and delete (time),581 ms,562 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"140,212 bytes","139,376 bytes"
+[B2.4] Concurrently insert and delete (docSize),"280,576 bytes","278,893 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),394 ms,373 ms
+[B3.1] 250 clients concurrently set number in map (time),15 ms,28 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,929 bytes","7,926 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,251 bytes","5,244 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),82.5 kB,172.3 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),171 ms,172 ms
+[B3.2] 250 clients concurrently set object in map (time),22 ms,19 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,631 bytes","13,628 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,265 bytes","5,265 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),181.3 kB,115.3 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),191 ms,164 ms
+[B3.3] 250 clients concurrently set string in map (time),11 ms,17 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,589 bytes","993,589 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,862 bytes","8,321 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),140.2 kB,246.2 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),178 ms,177 ms
+[B3.4] 250 clients concurrently insert text in array (time),15 ms,20 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,383 bytes","8,375 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,158 bytes","4,150 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),0 B,0 B
+[B3.4] 250 clients concurrently insert text in array (parseTime),147 ms,133 ms
+[B4] Apply real-world editing dataset (time),"16,805 ms","14,460 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),113 MB,99 MB
+[B4] Apply real-world editing dataset (parseTime),3.5 ms,3.1 ms
+CRDT performance test run 9,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,742 ms,683 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),87 ms,74 ms
+[B1.2] Insert string of length N (time)  ,3 ms,3 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),15.7 kB,29 kB
+[B1.2] Insert string of length N (parseTime),71 ms,85 ms
+[B1.3] Prepend N characters (time),626 ms,709 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.1 MB,1.4 MB
+[B1.3] Prepend N characters (parseTime),306 ms,277 ms
+[B1.4] Insert N characters at random positions (time),681 ms,684 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,548 bytes","29,527 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.4 MB
+[B1.4] Insert N characters at random positions (parseTime),239 ms,218 ms
+[B1.5] Insert N words at random positions (time),799 ms,804 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,352 bytes","86,958 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,2.9 MB
+[B1.5] Insert N words at random positions (parseTime),194 ms,158 ms
+"[B1.6] Insert string, then delete it (time)",4 ms,5 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,052 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",37 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",0 B,26.3 kB
+"[B1.6] Insert string, then delete it (parseTime)",139 ms,140 ms
+[B1.7] Insert or delete strings at random positions (time),806 ms,806 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"29,604 bytes","29,684 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.7 MB,1.6 MB
+[B1.7] Insert or delete strings at random positions (parseTime),249 ms,236 ms
+[B1.8] Append N numbers (time),773 ms,726 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,685 bytes","35,659 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),91 ms,83 ms
+[B1.9] Insert Array of N numbers (time),19 ms,22 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,630 bytes","35,674 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,630 bytes","35,674 bytes"
+[B1.9] Insert Array of N numbers (memUsed),35 kB,37.9 kB
+[B1.9] Insert Array of N numbers (parseTime),82 ms,87 ms
+[B1.10] Prepend N numbers (time),684 ms,658 ms
+[B1.10] Prepend N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,672 bytes","35,667 bytes"
+[B1.10] Prepend N numbers (memUsed),2.1 MB,2.3 MB
+[B1.10] Prepend N numbers (parseTime),202 ms,258 ms
+[B1.11] Insert N numbers at random positions (time),717 ms,793 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,183 bytes","59,200 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.1 MB
+[B1.11] Insert N numbers at random positions (parseTime),170 ms,200 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),4 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,155 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),59.4 kB,48.3 kB
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),139 ms,153 ms
+[B2.2] Concurrently insert N characters at random positions (time),172 ms,170 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,474 bytes","33,410 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,928 bytes","66,799 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),207 ms,354 ms
+[B2.3] Concurrently insert N words at random positions (time),245 ms,313 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,766 bytes","89,297 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"179,692 bytes","178,738 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),282 ms,302 ms
+[B2.4] Concurrently insert and delete (time),534 ms,650 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"138,948 bytes","139,148 bytes"
+[B2.4] Concurrently insert and delete (docSize),"278,064 bytes","278,448 bytes"
+[B2.4] Concurrently insert and delete (memUsed),8.9 MB,8.9 MB
+[B2.4] Concurrently insert and delete (parseTime),366 ms,392 ms
+[B3.1] 250 clients concurrently set number in map (time),11 ms,19 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,924 bytes","7,928 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,234 bytes","5,245 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),108.7 kB,0 B
+[B3.1] 250 clients concurrently set number in map (parseTime),287 ms,239 ms
+[B3.2] 250 clients concurrently set object in map (time),22 ms,25 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,633 bytes","13,630 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,271 bytes","5,268 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),80 kB,51.6 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),146 ms,151 ms
+[B3.3] 250 clients concurrently set string in map (time),23 ms,14 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,596 bytes","993,591 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"6,796 bytes","9,865 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),40.7 kB,187.5 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),151 ms,156 ms
+[B3.4] 250 clients concurrently insert text in array (time),28 ms,30 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,385 bytes","8,387 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,160 bytes","4,162 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),236.4 kB,190.8 kB
+[B3.4] 250 clients concurrently insert text in array (parseTime),146 ms,155 ms
+[B4] Apply real-world editing dataset (time),"14,430 ms","16,064 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),120 MB,176 MB
+[B4] Apply real-world editing dataset (parseTime),3.1 ms,3 ms
+CRDT performance test run 10,,
+N = 6000,Yjs baseline,Syncode
+[B1.1] Append N characters (time) ,921 ms,773 ms
+[B1.1] Append N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.1] Append N characters (docSize),"6,031 bytes","6,034 bytes"
+[B1.1] Append N characters (memUsed) ,0 B,0 B
+[B1.1] Append N characters (parseTime),84 ms,90 ms
+[B1.2] Insert string of length N (time)  ,3 ms,4 ms
+[B1.2] Insert string of length N (avgUpdateSize)  ,"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (docSize),"6,031 bytes","6,034 bytes"
+[B1.2] Insert string of length N (memUsed),10.2 kB,29.9 kB
+[B1.2] Insert string of length N (parseTime),97 ms,104 ms
+[B1.3] Prepend N characters (time),753 ms,841 ms
+[B1.3] Prepend N characters (avgUpdateSize),27 bytes,27 bytes
+[B1.3] Prepend N characters (docSize),"6,041 bytes","6,044 bytes"
+[B1.3] Prepend N characters (memUsed),1.2 MB,1.3 MB
+[B1.3] Prepend N characters (parseTime),277 ms,206 ms
+[B1.4] Insert N characters at random positions (time),855 ms,815 ms
+[B1.4] Insert N characters at random positions (avgUpdateSize),29 bytes,29 bytes
+[B1.4] Insert N characters at random positions (docSize),"29,542 bytes","29,614 bytes"
+[B1.4] Insert N characters at random positions (memUsed),1.1 MB,1.4 MB
+[B1.4] Insert N characters at random positions (parseTime),258 ms,207 ms
+[B1.5] Insert N words at random positions (time),922 ms,827 ms
+[B1.5] Insert N words at random positions (avgUpdateSize),36 bytes,36 bytes
+[B1.5] Insert N words at random positions (docSize),"87,784 bytes","87,413 bytes"
+[B1.5] Insert N words at random positions (memUsed),2.8 MB,3 MB
+[B1.5] Insert N words at random positions (parseTime),190 ms,160 ms
+"[B1.6] Insert string, then delete it (time)",6 ms,6 ms
+"[B1.6] Insert string, then delete it (avgUpdateSize)","6,053 bytes","6,056 bytes"
+"[B1.6] Insert string, then delete it (docSize)",38 bytes,41 bytes
+"[B1.6] Insert string, then delete it (memUsed)",26.7 kB,51.2 kB
+"[B1.6] Insert string, then delete it (parseTime)",173 ms,148 ms
+[B1.7] Insert or delete strings at random positions (time),890 ms,865 ms
+[B1.7] Insert or delete strings at random positions (avgUpdateSize),31 bytes,31 bytes
+[B1.7] Insert or delete strings at random positions (docSize),"33,005 bytes","33,209 bytes"
+[B1.7] Insert or delete strings at random positions (memUsed),1.8 MB,1.8 MB
+[B1.7] Insert or delete strings at random positions (parseTime),247 ms,226 ms
+[B1.8] Append N numbers (time),735 ms,734 ms
+[B1.8] Append N numbers (avgUpdateSize),32 bytes,32 bytes
+[B1.8] Append N numbers (docSize),"35,638 bytes","35,637 bytes"
+[B1.8] Append N numbers (memUsed),0 B,0 B
+[B1.8] Append N numbers (parseTime),79 ms,131 ms
+[B1.9] Insert Array of N numbers (time),26 ms,27 ms
+[B1.9] Insert Array of N numbers (avgUpdateSize),"35,673 bytes","35,643 bytes"
+[B1.9] Insert Array of N numbers (docSize),"35,673 bytes","35,643 bytes"
+[B1.9] Insert Array of N numbers (memUsed),0 B,0 B
+[B1.9] Insert Array of N numbers (parseTime),96 ms,82 ms
+[B1.10] Prepend N numbers (time),714 ms,666 ms
+[B1.10] Prepend N numbers (avgUpdateSize),31 bytes,32 bytes
+[B1.10] Prepend N numbers (docSize),"35,683 bytes","35,657 bytes"
+[B1.10] Prepend N numbers (memUsed),2.4 MB,2.5 MB
+[B1.10] Prepend N numbers (parseTime),253 ms,193 ms
+[B1.11] Insert N numbers at random positions (time),702 ms,712 ms
+[B1.11] Insert N numbers at random positions (avgUpdateSize),34 bytes,34 bytes
+[B1.11] Insert N numbers at random positions (docSize),"59,225 bytes","59,208 bytes"
+[B1.11] Insert N numbers at random positions (memUsed),2.1 MB,2.1 MB
+[B1.11] Insert N numbers at random positions (parseTime),170 ms,322 ms
+[B2.1] Concurrently insert string of length N at index 0 (time),5 ms,4 ms
+[B2.1] Concurrently insert string of length N at index 0 (avgUpdateSize),"6,094 bytes","6,096 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (docSize),"12,152 bytes","12,154 bytes"
+[B2.1] Concurrently insert string of length N at index 0 (memUsed),74.5 kB,0 B
+[B2.1] Concurrently insert string of length N at index 0 (parseTime),185 ms,100 ms
+[B2.2] Concurrently insert N characters at random positions (time),175 ms,162 ms
+ , , 
+[B2.2] Concurrently insert N characters at random positions (avgUpdateSize),"33,422 bytes","33,410 bytes"
+[B2.2] Concurrently insert N characters at random positions (docSize),"66,816 bytes","66,794 bytes"
+[B2.2] Concurrently insert N characters at random positions (memUsed),2.8 MB,2.8 MB
+[B2.2] Concurrently insert N characters at random positions (parseTime),275 ms,231 ms
+[B2.3] Concurrently insert N words at random positions (time),288 ms,221 ms
+[B2.3] Concurrently insert N words at random positions (avgUpdateSize),"89,320 bytes","89,717 bytes"
+[B2.3] Concurrently insert N words at random positions (docSize),"178,811 bytes","179,587 bytes"
+[B2.3] Concurrently insert N words at random positions (memUsed),6.3 MB,6.3 MB
+[B2.3] Concurrently insert N words at random positions (parseTime),313 ms,368 ms
+[B2.4] Concurrently insert and delete (time),557 ms,458 ms
+[B2.4] Concurrently insert and delete (avgUpdateSize),"140,034 bytes","138,821 bytes"
+[B2.4] Concurrently insert and delete (docSize),"280,180 bytes","277,734 bytes"
+[B2.4] Concurrently insert and delete (memUsed),9.5 MB,9 MB
+[B2.4] Concurrently insert and delete (parseTime),357 ms,358 ms
+[B3.1] 250 clients concurrently set number in map (time),14 ms,15 ms
+[B3.1] 250 clients concurrently set number in map (avgUpdateSize),"7,927 bytes","7,925 bytes"
+[B3.1] 250 clients concurrently set number in map (docSize),"5,247 bytes","5,239 bytes"
+[B3.1] 250 clients concurrently set number in map (memUsed),117.9 kB,102.7 kB
+[B3.1] 250 clients concurrently set number in map (parseTime),175 ms,175 ms
+[B3.2] 250 clients concurrently set object in map (time),17 ms,28 ms
+[B3.2] 250 clients concurrently set object in map (avgUpdateSize),"13,630 bytes","13,635 bytes"
+[B3.2] 250 clients concurrently set object in map (docSize),"5,267 bytes","5,272 bytes"
+[B3.2] 250 clients concurrently set object in map (memUsed),210 kB,19.3 kB
+[B3.2] 250 clients concurrently set object in map (parseTime),146 ms,158 ms
+[B3.3] 250 clients concurrently set string in map (time),20 ms,17 ms
+[B3.3] 250 clients concurrently set string in map (avgUpdateSize),"993,595 bytes","993,587 bytes"
+[B3.3] 250 clients concurrently set string in map (docSize),"9,871 bytes","9,856 bytes"
+[B3.3] 250 clients concurrently set string in map (memUsed),186.9 kB,232.9 kB
+[B3.3] 250 clients concurrently set string in map (parseTime),183 ms,154 ms
+[B3.4] 250 clients concurrently insert text in array (time),22 ms,17 ms
+[B3.4] 250 clients concurrently insert text in array (avgUpdateSize),"8,383 bytes","8,385 bytes"
+[B3.4] 250 clients concurrently insert text in array (docSize),"4,158 bytes","4,160 bytes"
+[B3.4] 250 clients concurrently insert text in array (memUsed),41.4 kB,0 B
+[B3.4] 250 clients concurrently insert text in array (parseTime),168 ms,164 ms
+[B4] Apply real-world editing dataset (time),"15,428 ms","14,155 ms"
+[B4] Apply real-world editing dataset (updateSize),"7,565,904 bytes","7,565,907 bytes"
+[B4] Apply real-world editing dataset (docSize),"159,929 bytes","159,932 bytes"
+[B4] Apply real-world editing dataset (memUsed),132 MB,114 MB
+[B4] Apply real-world editing dataset (parseTime),3.2 ms,3 ms
